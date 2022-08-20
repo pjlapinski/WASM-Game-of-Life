@@ -5,9 +5,11 @@ Uses WASM, with Rust's [Yew](https://yew.rs) library.
 
 ## Running
 
-You need cargo installed on your system. Then, using cargo, you need to install trunk.
+You need cargo installed with rustup on your system. You have to have wasm added as a target to rustup. 
+Then, using cargo, you need to install trunk.
 
 ```
+rustup target add wasm32-unknown-unknown
 cargo install trunk
 ```
 
