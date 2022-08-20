@@ -1,0 +1,12 @@
+[package]
+name = "wasm_game_of_life"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = "^0.19"
+stylist = {version = "0.10.1", features = ["yew_integration"]}
+getrandom = {version = "^0.2", features = ["js"]}
+rand = "0.8.5"

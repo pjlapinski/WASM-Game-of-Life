@@ -1,0 +1,58 @@
+:root {
+  --cell-size: 25px;
+  --bg-color: #88f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+
+.board {
+  display: grid;
+  background-color: black;
+  gap: 1px;
+  border: 1px black solid;
+  width: fit-content;
+}
+
+.board-nav {
+  width: 100%;
+  background-color: #22a;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-btn {
+  padding: 0.25rem 1rem;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: #229;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: 5px 5px #115;
+}
+
+.cell-alive {
+  background-color: #115;
+}
+
+.cell-dead {
+  background-color: #44f;
+}
