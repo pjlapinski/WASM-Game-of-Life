@@ -51,8 +51,10 @@ main {
 
 .cell-alive {
   background-color: #115;
+  transition: background-color 125ms ease-in-out;
 }
 
 .cell-dead {
   background-color: #44f;
+  transition: background-color 125ms ease-in-out;
 }
