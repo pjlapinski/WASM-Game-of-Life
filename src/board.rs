@@ -9,7 +9,7 @@ pub struct BoardProps {
 
 fn do_step_on_board(board: &Vec<Vec<bool>>) -> Vec<Vec<bool>> {
     let mut new_board = board.to_vec();
-    let get_num_neighbors = |i: usize, j: usize| {
+    let get_neighbors = |i: usize, j: usize| {
         let mut out_vec = Vec::<bool>::new();
         if i != 0 {
             out_vec.push(board[i - 1][j]);
@@ -42,7 +42,7 @@ fn do_step_on_board(board: &Vec<Vec<bool>>) -> Vec<Vec<bool>> {
 
     for x in 0..board.len() {
         for y in 0..board[x].len() {
-            let neighbors = get_num_neighbors(x, y);
+            let neighbors = get_neighbors(x, y);
             let alive_num = neighbors.iter().filter(|cell| **cell).count();
 
             // Any live cell with two or three live neighbours survives.
